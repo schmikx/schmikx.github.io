@@ -1,8 +1,102 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Plants</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>This is a first little test</p>
-<p>Let us all go to mars!</p>
+
+    <div class="hero-banner">
+        <div class="wrapper">
+            <h4>Bienvenidos, soy <a href="https://juanafranceschini.com">Juana Franceschini</a> y hoy les traigo...</h4>
+            <h1>UNA BREVE HISTORIA <br>
+                SOBRE MIS PLANTAS.</h1>
+            <h4>Se que están muy intigados, acompañame.</h4>
+            <a class="cta" href="#historia">Seguir leyendo</a>
+        </div>
+        <div class="character1"></div>
+        <div class="character2"></div>
+        <div class="character3"></div>
+    </div>
+    <div id="suscribite"></div>
+    <nav>
+        <a href="#" class="logo"></a>
+        <ul>
+            <li><a href="javascript:()" onclick="showpopup();">Suscribite</a></li>
+            <li><a href="">Fotos</a></li>
+            <li><a href="#historia">Historia</a></li>
+        </ul>
+    </nav>
+    <div class="suscribe">
+      <div class="wrapper">
+        <h1>Suscribite a mi fan club</h1>
+        <h4>Se parte de esta comunidad, y únete a mi newsletter diaria y descubre más de mis alucinantes historias para no aburrirte ni un solo día!</h4>
+        <button class="cta" onclick="showpopup();">Suscribite</button>
+      </div>
+    </div>
+    <div class="sep"></div>
+    <div class="story"  id="historia">
+        <div class="wrapper">
+            <ul class="nb-list">
+                <li class="green">Cuidarlas</li>
+                <li class="green2">Darles amor</li>
+                <li class="gray">&nbsp;</li>
+                <li class="celeste dragging">Regarlas</li>
+                <li class="blue">Sacarle los bichitos</li>
+                <li class="yellow">Macetitas</li>
+                <li class="pink">Recortarlas</li>
+                <li class="celeste2">Hablarles</li>
+            </ul>
+            <h2>Ya llegaste hasta acá, seguro que sos mi mamá...</h2>
+            <p>No encontré excusa mejor para hacer esta web y pensé en mis plantitas, que son poquitas pero las quiero mucho. La cuestión es que tengo poco espacio para tener plantas, y practicamente no hay lugar con sol. Asique tengo algunas plantas en el living y algunas otras en el lavadero. </p>
+            <p>Pero mi planta preferida es la que tengo encima de la biblioteca, es hermosa y es una de las pocas que me va sobreviviendo. Ah porque no aclaré que soy MALISIMA cuidando plantas, yo les hablo le doy amor pero se me mueren bastante... me cuesta mucho mantenerlas. </p>
+            <p>Otra que me gusta mucho está al lado de la tele y siempre la protejo de su maxima enemiga que se llama Milagros. Ella llama a mi planta Malefica, y siempre le está tirando conjuros para que no le crezca flor. pero se que lo conbatiremos y superaremos a nuestra enemiga!</p>
+            <p>Y hasta acá llega por el momento la historia de mis plantas, si quieren saber más acerca de mis plantitas pueden suscribirse a mi newsletter. 
+                Espero poder mejorar cuidando a mis plantitas jaja.</p>
+        </div>
+    </div>
+    <div class="sep">
+    </div>
+    <img class="plantsi" src="img/character-footer.png" width="500" alt="mis plantas">
+    <footer>
+        <div class="wrapper">
+        © 2020 <a href="https://juanafranceschini.com">Juana Franceschini</a>.
+        </div>
+    </footer>
+    <div class="popup" id="popup">
+        <div class="blanket"></div>
+        <div class="content">
+            <h2>Completa tus datos</h2>
+            <form action="">
+                <div class="row">
+                    <div class="item">
+                        <label>Nombre</label>
+                        <input type="text" placeholder="Awesomeface" value="Juana">
+                    </div>
+                    <div class="item">
+                        <label>Apellido</label>
+                        <input type="text" placeholder="Franceschini">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="item">
+                        <label>Mail</label>
+                        <input type="text" placeholder="soygenial@gmail.com">
+                    </div>
+                    <div class="item">
+                        <label>Me queres?</label>
+                        <input type="text" placeholder="Siempre">
+                    </div>
+                </div>
+                 <button class="cta">Me apunto!</button>
+            </form>
+            <button class="close" onclick="hidepopup();">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js" type="text/javascript"></script>
+
 </body>
 </html>
